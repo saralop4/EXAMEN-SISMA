@@ -1,0 +1,122 @@
+CREATE DATABASE taskdb;
+use taskdb;
+
+/**CREATE TABLE Usuario(
+Id INT PRIMARY KEY AUTO_INCREMENT,
+Username VARCHAR(30) NOT NULL,
+Password VARCHAR(30) NOT NULL
+);**/
+
+CREATE TABLE Tarea(
+Id int PRIMARY KEY AUTO_INCREMENT,
+Task VARCHAR(80) NOT NULL,
+Status BOOLEAN NOT NULL
+);
+
+
+INSERT INTO tarea(Task,Status)values('Barrer',false);
+INSERT INTO tarea(Task,Status)values('Pagar Banco',true);
+INSERT INTO tarea(Task,Status)values('Comprar Pc',false);
+
+
+/**INSERT INTO usuario(Username,Password) VALUES ('saralop','123sara');
+INSERT INTO usuario(Username,Password) VALUES ('coneo','123coneo');
+INSERT INTO usuario(Username,Password) VALUES ('sergio','123sergio');**/
+
+INSERT INTO Tarea (Task, Status) VALUES
+('Hacer la compra', 1),
+('Llevar el coche al taller', 0),
+('Estudiar para el examen de matemáticas', 1),
+('Preparar la cena', 0),
+('Ir al gimnasio', 1),
+('Llamar al servicio de atención al cliente', 0),
+('Limpiar la casa', 1),
+('Enviar correos electrónicos', 0),
+('Leer un libro', 1),
+('Hacer ejercicio', 0),
+('Hacer la declaración de impuestos', 1),
+('Comprar un regalo de cumpleaños', 0),
+('Resolver problemas de programación', 1),
+('Pasear al perro', 0),
+('Organizar el armario', 1),
+('Revisar la bandeja de entrada', 0),
+('Preparar un informe para el trabajo', 1),
+('Hacer una videollamada', 0),
+('Planificar unas vacaciones', 1),
+('Aprender a cocinar una nueva receta', 0),
+('Hacer una presentación para la reunión', 1),
+('Comprar boletos para el cine', 0),
+('Hacer una lista de tareas pendientes', 1),
+('Llevar a los niños a la escuela', 0),
+('Hacer una videollamada', 1),
+('Resolver problemas de programación', 0),
+('Pasear al perro', 1),
+('Organizar el armario', 0),
+('Revisar la bandeja de entrada', 1),
+('Preparar un informe para el trabajo', 0),
+('Hacer ejercicio', 1),
+('Hacer la declaración de impuestos', 0),
+('Comprar un regalo de cumpleaños', 1),
+('Resolver problemas de programación', 0),
+('Pasear al perro', 1),
+('Organizar el armario', 0),
+('Revisar la bandeja de entrada', 1),
+('Preparar un informe para el trabajo', 0),
+('Hacer ejercicio', 1),
+('Hacer la declaración de impuestos', 0),
+('Comprar un regalo de cumpleaños', 1),
+('Llevar a los niños a la escuela', 0),
+('Hacer una videollamada', 1),
+('Resolver problemas de programación', 0),
+('Pasear al perro', 1),
+('Organizar el armario', 0),
+('Revisar la bandeja de entrada', 1),
+('Preparar un informe para el trabajo', 0),
+('Hacer ejercicio', 1),
+('Hacer la declaración de impuestos', 0),
+('Comprar un regalo de cumpleaños', 1),
+('Resolver problemas de programación', 0),
+('Pasear al perro', 1),
+('Organizar el armario', 0),
+('Revisar la bandeja de entrada', 1),
+('Preparar un informe para el trabajo', 0),
+('Hacer ejercicio', 1),
+('Hacer la declaración de impuestos', 0),
+('Comprar un regalo de cumpleaños', 1),
+('Llevar a los niños a la escuela', 0),
+('Hacer una videollamada', 1),
+('Resolver problemas de programación', 0),
+('Pasear al perro', 1),
+('Organizar el armario', 0),
+('Revisar la bandeja de entrada', 1),
+('Preparar un informe para el trabajo', 0),
+('Hacer ejercicio', 1),
+('Hacer la declaración de impuestos', 0),
+('Comprar un regalo de cumpleaños', 1),
+('Resolver problemas de programación', 0),
+('Pasear al perro', 1),
+('Organizar el armario', 0),
+('Revisar la bandeja de entrada', 1),
+('Preparar un informe para el trabajo', 0),
+('Hacer ejercicio', 1),
+('Hacer la declaración de impuestos', 0),
+('Comprar un regalo de cumpleaños', 1),
+('Llevar a los niños a la escuela', 0),
+('Hacer una videollamada', 1),
+('Resolver problemas de programación', 0),
+('Pasear al perro', 1),
+('Organizar el armario', 0),
+('Revisar la bandeja de entrada', 1),
+('Preparar un informe para el trabajo', 0),
+('Hacer ejercicio', 1),
+('Hacer la declaración de impuestos', 0),
+('Comprar un regalo de cumpleaños', 1),
+('Resolver problemas de programación', 0),
+('Pasear al perro', 1),
+('Organizar el armario', 0),
+('Revisar la bandeja de entrada', 1),
+('Preparar un informe para el trabajo', 0),
+('Hacer ejercicio', 1),
+('Hacer la declaración de impuestos', 0),
+('Comprar un regalo de cumpleaños', 1),
+('Llevar a los niños a la escuela', 0);
